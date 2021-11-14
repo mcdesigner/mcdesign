@@ -76,21 +76,23 @@ select {
 }
 
 img.header-logo {
-    display: flex;
-    align-items: center;
-    padding: 0px 0px 0px 0px;
-    background: rgba(39, 39, 39, 0);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    transition: 1s;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0px auto;
-    margin-bottom: -125px;
+display: flex;
+align-items: center;
+padding: 0px 0px 0px 0px;
+background: rgba(39, 39, 39, 0);
+position: -webkit-sticky;
+position: fixed;
+top: 0;
+transition: 1s;
+color: #fff;
+text-align: center;
+display: flex;
+justify-content: center;
+text-align: center;
+margin: 0px auto;
+margin-bottom: 0px;
+margin-bottom: -125px;
+left: 50%;
   }
 
   img.header-logo_hidden {
