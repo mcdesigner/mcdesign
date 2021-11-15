@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    color: #2A2A2A;
+    background-color: #000;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.container {
+    width: 100%;
+  }
+
+.frame-img {
+    display: flex;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    background: linear-gradient(180deg, #ffffff00 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 110px;
+    position: fixed;
+    transition: 1s;
+    color: #fff;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: -125px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header_hidden {
+    transform: translateY(-100%);
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: default;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 31%;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.header-logo {
+    transition: ease-in-out 0.2s;
+    padding-top: 30px;
+}
+
+.header-logo-2 {
+    transition: ease-in-out 0.2s;
+    padding-top: 30px;
+}
+
+.overlay a {
+    /* padding: 8px; */
+    text-decoration: none;
+    font-size: 30px;
+    color: #f0f0f0;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar-item {
+    font-size: 30px;
+    color: #f0f0f0;
+    margin-bottom: 49px; 
+}
+
+.navbar-item:nth-last-child(){
+    margin: 0px;
+}
+
+.navbar-item:nth-child(1) {
+    font-weight: bold;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.jewerly-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .jewelry {
+        display: none;
+    }
+    .jewerly-mobile {
+        display: block;
+    }
+}
