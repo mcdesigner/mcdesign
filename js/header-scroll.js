@@ -1,3 +1,12 @@
+$(document).scroll(function() { 
+    if($(window).scrollTop() == 0) {
+      $(".header").hide();
+    }
+    if($(window).scrollTop() > 0) {
+        $(".header").show();
+    }
+ });
+
 document.addEventListener('DOMContentLoaded', () => { // DOM готов к взаимодейтсвию
 
 	const onScrollHeader = () => { // объявляем основную функцию onScrollHeader
@@ -29,3 +38,4 @@ document.addEventListener('DOMContentLoaded', () => { // DOM готов к вз�
 	onScrollHeader() // вызываем основную функцию onScrollHeader
   
   });
+  
