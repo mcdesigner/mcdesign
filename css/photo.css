@@ -81,6 +81,7 @@ select {
     padding: 0px 0px 0px 0px;
     background: linear-gradient(180deg, #ffffff00 0%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     height: 110px;
     position: fixed;
     transition: 1s;
