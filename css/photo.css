@@ -86,7 +86,7 @@ select {
     position: fixed;
     transition: 1s;
     color: #fff;
-    display: flex;
+    display: none;
     justify-content: center;
     text-align: center;
     margin-bottom: -125px;
@@ -98,7 +98,7 @@ select {
 
 .header_hidden {
     transform: translateY(-100%);
-  }
+}
 
 .overlay {
     height: 0%;
@@ -123,6 +123,7 @@ select {
 
 .header-logo {
     transition: ease-in-out 0.2s;
+    padding-top: 30px;
 }
 
 .header-logo-2 {
