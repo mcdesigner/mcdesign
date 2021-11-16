@@ -1,9 +1,9 @@
 $(document).scroll(function() { 
     if($(window).scrollTop() == 0) {
-      $(".header").hide();
+      $(".header").show();
     }
     if($(window).scrollTop() > 0) {
-        $(".header").show();
+        $(".header_hidden").show();
     }
  });
 
